@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.module_name  = "DxpInbox"
   spec.name         = "DxpInbox"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "DXP Inbox"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/HelloGitHub123/DXPToolsLib.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/HelloGitHub123/DxpInbox.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
