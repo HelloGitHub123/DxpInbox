@@ -152,7 +152,13 @@
 	if (IsArrEmpty_tools(messageIds)) {
 		return;
 	}
-	NSDictionary *dic = @{@"messageIds":messageIds,@"subsId":@(subsId),@"prefix":prefix,@"serviceNumber":serviceNumber};
+	
+	NSDictionary *dic = @{};
+	if (subsId > 0) {
+		dic = @{@"messageIds":messageIds,@"subsId":@(subsId),@"prefix":prefix,@"serviceNumber":serviceNumber};
+	} else {
+		dic = @{@"messageIds":messageIds,@"prefix":prefix,@"serviceNumber":serviceNumber};
+	}
 	self.markMessageReadBlock = markMessageReadBlock;
 	[self.messageViewModel markMessageReadByMessageId:dic];
 }

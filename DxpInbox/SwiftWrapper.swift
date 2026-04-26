@@ -31,7 +31,7 @@ import Foundation
 				let unreadCount = model?.data.unreadCount ?? ""
 				completion(unreadCount, "")
 			} else {
-				completion("",errorMsg ?? "")
+				completion("-1",errorMsg ?? "")
 			}
 		}
 	}
